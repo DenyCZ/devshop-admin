@@ -1,6 +1,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+  modules: [
+    '@nuxtjs/tailwindcss', 
+    'shadcn-nuxt',
+    '@vee-validate/nuxt',
+  ],
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -11,5 +15,5 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './components/ui'
-  }
+  },
 })

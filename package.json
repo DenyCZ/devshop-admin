@@ -1,5 +1,6 @@
 {
-  "name": "nuxt-app",
+  "name": "devshop-admin-panel",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -7,10 +8,15 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.6.4",
     "@nuxtjs/tailwindcss": "^6.11.3",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
     "nuxt": "^3.10.0",
     "shadcn-nuxt": "^0.8.7",
     "typescript": "^5.3.3",
@@ -18,11 +24,17 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@vee-validate/nuxt": "^4.12.5",
+    "@vee-validate/zod": "^4.12.5",
+    "@vueuse/core": "^10.7.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "defu": "^6.1.4",
     "lucide-vue-next": "^0.321.0",
     "radix-vue": "^1.4.0",
     "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "vee-validate": "^4.12.5",
+    "zod": "^3.22.4"
   }
 }
